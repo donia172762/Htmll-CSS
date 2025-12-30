@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Product Card | code_wars_official</title>
+    <link rel="stylesheet" href="sofa1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="thumb">
+            <ul>
+                <li onmouseover="chnageImgSrc('whhhhhhhhh.jpg')"><img src="whhhhhhhhh.jpg" alt=""></li>
+                <li onmouseover="chnageImgSrc('red.jpg')"><img src="red.jpg" alt=""></li>
+                <li onmouseover="chnageImgSrc('bege.jpg')"><img src="bege.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="imgBox">
+            <i>UPPLAND Sofa</i>
+            <img src="whhhhhhhhh.jpg" alt="" class="shoes">
+            <p>$949.00</p>
+            <a href="#" class="btn">Add To Cart</a>
+        </div>
+    </div>
+
+
+    <script>
+        function chnageImgSrc(src) {
+            document.querySelector('.shoes').src = src;
+        }
+    </script>
+</body>
+</html>

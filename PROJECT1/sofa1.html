@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Product Card | code_wars_official</title>
+    <link rel="stylesheet" href="sofa1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="thumb">
+            <ul>
+                <li onmouseover="chnageImgSrc('gray.jpg')"><img src="gray.jpg" alt=""></li>
+                <li onmouseover="chnageImgSrc('darkblue.jpg')"><img src="darkblue.jpg" alt=""></li>
+                <li onmouseover="chnageImgSrc('lightgreen.jpg')"><img src="lightgreen.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="imgBox">
+            <i>MORABO Sofa</i>
+            <img src="darkblue.jpg" alt="" class="shoes">
+            <p><s>$699.00 </s>($500.00)</p>
+            <a href="#" class="btn">Add To Cart</a>
+        </div>
+    </div>
+    <script>
+        function chnageImgSrc(src) {
+            document.querySelector('.shoes').src = src;
+        }
+    </script>
+</body>
+</html>

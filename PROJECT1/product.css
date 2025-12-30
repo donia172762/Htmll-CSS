@@ -1,0 +1,355 @@
+
+.box:hover{
+  animation-play-state: paused;
+  
+}
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: animate 30s linear infinite;
+}
+@keyframes animate {
+  0%{
+      transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+      transform: perspective(1000px) rotateY(360deg);
+  }
+}
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( #ececec, #c5a880);
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(240px);
+}
+
+.box span::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+.box span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.dk{
+    
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+header {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 4em;
+    height: 100%;
+    color: #33495e;
+    font-family: "Dancing Script", cursive;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ .logo {
+    float: left;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+
+ ul {
+    list-style: none;
+    margin-right: 14em;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5em;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+li a {
+    color:#33495e;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+li a :hover{
+   border-bottom: 0.1em solid #c5a880;
+}
+.field-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0 0.3em;
+}
+.field-search input{
+  border-radius: 1em;
+  padding: 0.3em 1em;
+  border: 0.2em solid #c5a880;
+}
+.field-search img{
+  margin-top: 0.2em;
+  cursor: pointer;
+  background: #c5a880;
+  border-radius: 0.3em;
+}
+header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+body {
+  font-family: Inter, sans-serif;
+  height:100%;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( #ececec, #c5a880);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* .sofa-fall{
+position: absolute;
+width: 100%;
+height: 85vh;
+overflow: hidden;
+display: flex;
+justify-content: center;
+z-index: 1;
+pointer-events: none;
+}
+.sofa{
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  top:0;
+  left:0;
+  pointer-events: none;
+}
+.sofa img{
+  width: 5em;
+}
+.sofa div{
+  position: absolute;
+  display: block;
+}
+.sofa div:nth-child(1)
+{
+  left: 20%;
+  animation: sofaFall 20s linear infinite;
+}
+.sofa div:nth-child(2)
+{
+  left: 50%;
+  animation: sofaFall 14s  infinite linear ;
+}
+.sofa div:nth-child(3)
+{
+  left: 20%;
+  animation: sofaFall 11s infinite linear ;
+}
+.sofa div:nth-child(4)
+{
+  left: 5%;
+  animation: sofaFall 15s infinite linear ;
+}
+.sofa div:nth-child(5)
+{
+  left: 85%;
+  animation: sofaFall 18s  infinite linear ;
+}
+.sofa div:nth-child(6)
+{
+  left: 90%;
+  animation: sofaFall 12s  infinite linear ;
+}
+.sofa div:nth-child(7)
+{
+  left: 15%;
+  animation: sofaFall 12s  infinite linear ;
+}
+.sofa div:nth-child(8)
+{
+  left: 60%;
+  animation: sofaFall 15s  infinite linear ;
+}
+@keyframes sofaFall{
+  0%{
+    opacity: 0;
+    top: -10%;
+    transform: translateX(20px);
+  }
+  10%{
+    opacity: 1;
+  }
+  20%{
+    transform: translateX(-20px);
+  }
+  40%{
+    transform: translateX(-20px);
+  }
+  60%{
+    transform: translateX(-20px);
+  }
+  80%{
+    transform: translateX(-20px);
+  }
+  100%{
+    top:110%;
+    transform: translateX(-20px);
+  }
+} */
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 17cm;
+  top:5cm;
+  height: 6cm;
+
+}
+.i{
+  font-size: 1.5cm;
+  color: #555;
+}
+
+.container {
+  width: 100%;
+  width: 820px;
+  height: 340px;
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  margin-inline:200px;
+}
+
+.card {
+  min-width: 70px;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  transition: flex-grow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+  --transition-timing: 0.35s;
+}
+/* .card.active {
+  flex-grow: 100;
+} */
+.card:hover {
+  flex-grow: 7;
+}
+
+.card > .background {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.4);
+  z-index: -1;
+  transition: var(--transition-timing) ease;
+}
+.card:hover > .background {
+  filter: brightness(1);
+}
+
+.card > .card-content {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+  overflow: hidden;
+  transition: var(--transition-timing);
+  z-index: 10;
+}
+.card:hover > .card-content {
+  inset: 20px;
+  top: auto;
+}
+
+.card-content > * {
+  transition: var(--transition-timing);
+}
+
+.card-content > .profile-image {
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  border: 1px solid #c5a880;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.card:hover .profile-image {
+  border: 1px solid rgb(110, 252, 205);
+}
+.profile-image > svg {
+  stroke: #c5a880;
+}
+.card:hover .profile-image > svg {
+  stroke: rgb(110, 252, 205);
+}
+
+.card-content > .title {
+ font-style: italic;
+  white-space: pre;
+  margin-left: 10px;
+  translate: 0 100%;
+  opacity: 0;
+}
+.card:hover .title {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.card > .backdrop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  z-index: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+}
